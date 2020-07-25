@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculador de pizza</title>
+    <link rel="stylesheet" href="pizza.css">
+</head>
+<body>
+    <header>
+        <h1>CALCULADORA DE PIZZA</h1>
+    </header>
+    <section>
+        <div id="comiloes">
+            Comilões: <input type="number" name="comiloesNum" id="comiloesNum">
+        </div>
+        <div id="redime">
+            Regime:   <input type="number" name="regimeNum" id="regimeNum">
+        </div>
+        <div id="adultos">
+            Adultos:  <input type="number" name="adultosNum" id="adultosNum">
+        </div>
+        <div id="criancas">
+            Crianças: <input type="number" name="criancasNum" id="criancasNum">
+        </div>
+        <div>
+            <p>
+                <input id="butao" type="button" value="Enviar" onclick="enviar()">
+            </p>
+        </div>
+        <div id="fatias">
+            <p>Quantidade de fatias: </p>
+        </div>
+        <div>
+            <p>Tamanho das pizzas</p>
+            <div>
+                <img id="tamanhofamilia" src="https://yummmy.s3.amazonaws.com/uploads/image/file/22709/regular_accb7d-37d37d9f1001e88384dafc6e5cc60c4f-jpg-1024.jpg" alt="pizza tamanho familia">
+                <img id="tamanhogrande" src="https://media-cdn.tripadvisor.com/media/photo-s/0b/78/f6/a4/maracana-8-fatias-35cm.jpg" alt="pizza grande">
+                <img id="tamanhopequeno" src="https://static.tonolucro.com/images/anuncio/A5cf6c4b0eab93.jpg" alt="pizza pequena">
+            </div>
+            <p id="tamanhosPizza">Tamanho Familia - Grande - Pequena</p>
+            <p id="restoDeFatias">Fatias separadas: </p>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; By:Ohlavrac 2020</p>
+    </footer>
+    <script src="pizzascript.js"></script>
+</body>
+</html>
