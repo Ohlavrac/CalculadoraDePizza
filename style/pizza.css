@@ -1,39 +1,50 @@
 body{
-    background-color: rgb(166, 23, 35
-    );
+    background-color: rgb(166, 23, 35);
     color: rgb(191, 194, 10);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: auto;
+    margin: auto;
 }
+
 section{
     background-color: rgb(242, 181, 68);
     border-radius: 15px;
     width: 600px;
     padding: 10px;
-    position: relative;
+    margin: 0 auto;
+    display: block;
+    position: absolute;
     left: 320px;
     box-shadow: 5px 5px 10px rgb(34, 34, 34);
     color: black;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-input#comiloesNum{
-    position: relative;
-    left: 1px
+
+input {
+    display: block;
+    margin: 1px auto;
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 5px;
 }
-input#regimeNum{
-    position: relative;
-    left: 8px;
-}
-input#adultosNum{
-    position: relative;
-    left: 8px;
-}
-input#criancasNum{
-    position: relative;
-    left: 4px;
-}
+
 div{
     text-align: center;
 }
+
+#button {
+    background-color: rgb(166, 23, 35);
+    border-radius: 5px;
+    padding: 10px 22px;
+    font-size: 16px;
+    transition-duration: 0.4s;
+}
+
+#button:hover {
+    background-color: rgb(185, 30, 43);
+    
+}
+
 img#tamanhofamilia{
     width: 150px;
     height: 150px;
@@ -51,4 +62,7 @@ img#tamanhopequeno{
 }
 footer{
     font-style: italic;
+    position: absolute;
+    width: 99%;
+    bottom: 0;
 }

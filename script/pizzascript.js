@@ -3,28 +3,21 @@
 
 function enviar(){
     //Puxa o que foi digitiado dentro do input:number
-    var comiloesTx = document.getElementById('comiloesNum')
-    var regimeTx = document.getElementById('regimeNum')
-    var adultosTx = document.getElementById('adultosNum')
-    var criancasTx = document.getElementById('criancasNum')
+    var comiloesTx = Number(document.getElementById('comiloesNum').value);
+    var regimeTx = Number(document.getElementById('regimeNum').value);
+    var adultosTx = Number(document.getElementById('adultosNum').value);
+    var criancasTx = Number(document.getElementById('criancasNum').value);
     
     var fatiasDePizza = document.getElementById('fatias')
     var tamanhosPizzaTx = document.getElementById('tamanhosPizza')
     var restoFatias = document.getElementById('restoDeFatias')
 
-    //Converte as variaves que foram puxadas do html(innerhtml) para Number
-
-    var comiloesNumb = Number(comiloesTx.value)
-    var regimeNumb = Number(regimeTx.value)
-    var adultosNumb = Number(adultosTx.value)
-    var criancasNumb = Number(criancasTx.value)
-
     //Faz o calculo para saber a quantidade de fatias sera necessario
 
-    var fatiasComiloes = comiloesNumb * 4
-    var fatiasRegime = regimeNumb * 1
-    var fatiasAdultos = adultosNumb * 2
-    var fatiasCriancas = criancasNumb * 2
+    var fatiasComiloes = comiloesTx * 4
+    var fatiasRegime = regimeTx * 1
+    var fatiasAdultos = adultosTx * 2
+    var fatiasCriancas = criancasTx * 2
 
     var totalFatias = fatiasComiloes + fatiasRegime + fatiasAdultos + fatiasCriancas
  

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculador de pizza</title>
-    <link rel="stylesheet" href="pizza.css">
+    <link rel="stylesheet" href="./style/pizza.css">
 </head>
 <body>
     <header>
@@ -12,20 +12,20 @@
     </header>
     <section>
         <div id="comiloes">
-            Comilões: <input type="number" name="comiloesNum" id="comiloesNum">
+            <p><input type="number" name="comiloesNum" id="comiloesNum" placeholder="Comilões"></p>
         </div>
         <div id="redime">
-            Regime:   <input type="number" name="regimeNum" id="regimeNum">
+            <p><input type="number" name="regimeNum" id="regimeNum" placeholder="Regime"></p>
         </div>
         <div id="adultos">
-            Adultos:  <input type="number" name="adultosNum" id="adultosNum">
+            <p><input type="number" name="adultosNum" id="adultosNum" placeholder="Adultos"></p>
         </div>
         <div id="criancas">
-            Crianças: <input type="number" name="criancasNum" id="criancasNum">
+            <p><input type="number" name="criancasNum" id="criancasNum" placeholder="Crianças"></p>
         </div>
         <div>
             <p>
-                <input id="butao" type="button" value="Enviar" onclick="enviar()">
+                <input id="button" type="button" value="Calcular" onclick="enviar()">
             </p>
         </div>
         <div id="fatias">
@@ -45,6 +45,6 @@
     <footer>
         <p>&copy; By:Ohlavrac 2020</p>
     </footer>
-    <script src="pizzascript.js"></script>
+    <script src="./script/pizzascript.js"></script>
 </body>
 </html>
